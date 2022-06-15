@@ -7,15 +7,16 @@ body {
   margin: 0;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-weight: 800;
   color: #406882;
 }
 
+
 #profile-pic {
   height:200px;
   width:200px;
-  border-radius: 100px;
+  border-radius: 50%;
 }
 
 p {
@@ -27,9 +28,25 @@ a {
   color: #6998AB;
 }
 
+a:hover h3 {
+  color: #00FFDD;
+}
+
 a:hover {
   color: #00FFDD;
 }
+
+.btn-blue {
+  display: block;
+  background-color: #6B72E1;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
+  width: 150px;
+  margin: 0 auto;
+}
+
+        /* header design */
 
 .header {
   width: 70%;
@@ -37,6 +54,8 @@ a:hover {
   margin: 5px auto;
   background-color: white;
 }
+        /* Main design */
+
 
 .main {
   width: 70%;
@@ -44,6 +63,30 @@ a:hover {
   margin: 5px auto;
   background-color: white;
 }
+
+.cards {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.card-img {
+  width: 200px;
+  height: 200px;
+}
+
+.card-details {
+  padding: 10px;
+}
+
+        /* footer design */
 
 .footer {
   width: 70%;
@@ -55,21 +98,12 @@ a:hover {
 ul {
   list-style-type: none;
   display: flex;
+  padding: 0;
 }
 
 li {
   display: inline-block;
   margin: auto;
-}
-
-.btn-blue {
-  display: block;
-  background-color: #6B72E1;
-  color: white;
-  padding: 15px 20px;
-  border-radius: 4px;
-  width: 150px;
-  margin: 0 auto;
 }
 
 @media (max-width: 960px) {
